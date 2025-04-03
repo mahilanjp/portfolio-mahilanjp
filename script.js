@@ -1,32 +1,13 @@
-function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
+//Mobile Menu
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
 
-    if(menuBtn.className === "nav-menu"){
-      menuBtn.className += " responsive";
-    } else {
-      menuBtn.className = "nav-menu";
-    }
-  }
+const toggleNav = () => {
+  navbar.classList.toggle("active");
+  mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
 
-  window.onscroll = function() {headerShadow()};
-
-  function headerShadow() {
-    const navHeader =document.getElementById("header");
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
-
-      navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
-      navHeader.style.height = "70px";
-      navHeader.style.lineHeight = "70px";
-
-    } else {
-
-      navHeader.style.boxShadow = "none";
-      navHeader.style.height = "90px";
-      navHeader.style.lineHeight = "90px";
-
-    }
-  }
   //Blinking Text
   document.addEventListener("DOMContentLoaded", function () {
     function writeText(element, content) {
@@ -65,3 +46,21 @@ function myMenuFunction(){
       });
     });
   });
+   // Calculate Age Dynamically
+        function calculateAge(dob) {
+            const birthDate = new Date(dob);
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDifference = today.getMonth() - birthDate.getMonth();
+
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            return age;
+        }
+
+        document.getElementById('age').textContent = calculateAge('2009-05-30');
+  //https://devsnap.me/css-mobile-menus
+  //https://github.com/webdevcreative/responsive-navbar-design
+  //https://codepen.io/nxworld/pen/OyRrGy
