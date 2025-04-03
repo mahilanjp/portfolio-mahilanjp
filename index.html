@@ -8,40 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="navbar-container">
-      <nav id="navbar-header">
-        <div class="nav-logo">
-            <p class="nav-name">Mahilan</p>
-            <span>JP</span>
+    <nav>
+        <div class="logo">
+          <!--<img src="assets/Logo64x64.png" alt="logo" />-->
+          <h1>MAHILAN<span>JP.</span></h1>
         </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#intro" class="nav-link">INTRO</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#skills" class="nav-link">SKILLS</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">PROJECTS</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">CONTACT</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        <ul>
+          <li>
+            <a href="#intro">My Intro</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+              <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
       </nav>
-    </div>
+      <div class="menubar">
+        <ul>
+          <div class="logo">
+          <!--<img src="assets/Logo64x64.png" alt="logo" />-->
+          <h1>MAHILAN<span>JP.</span></h1>
+        </div>
+        <br>
+        <br>
+          <li>
+            <a href="#intro">My Intro</a>
+          </li><br>
+          <li>
+            <a href="#skills">Skills</a>
+          </li><br>
+          <li>
+            <a href="#projects">Projects</a>
+          </li><br>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     <section class="mainpage-section"> 
-            <video src="mainpagemain-video.mp4" autoplay muted loop></video>
-            <br>
+            <video src="img/mainpagemain-video.mp4" autoplay muted loop></video>
             <br>
             <br>
             <br>
@@ -51,11 +66,12 @@
             <br>
             <h1>MahilanJP</h1>
             <p><span id="mainpage-holder"></span><span class="blinking-cursor">|</span></p>
-            <br><br><br><br><br><br><br>
+            <br><br><br>
             <div class="mainpage-scrollbar">
                 <a href="#intro"><span></span><span></span><span></span></a>
             </div>
     </section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
