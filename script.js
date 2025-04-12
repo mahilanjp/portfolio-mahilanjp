@@ -24,7 +24,7 @@ mobileNav.addEventListener("click", () => toggleNav());
     }
 
     const element = document.getElementById("mainpage-holder");
-    writeText(element, "WEB DESIGNER + FRONT-END DEVELOPER");
+    writeText(element, "FRONT-END + BACK-END DEVELOPER");
   });
   //Scroll Bar
   document.addEventListener("DOMContentLoaded", function () {
@@ -61,6 +61,6 @@ mobileNav.addEventListener("click", () => toggleNav());
         }
 
         document.getElementById('age').textContent = calculateAge('2009-05-30');
-  //https://devsnap.me/css-mobile-menus
-  //https://github.com/webdevcreative/responsive-navbar-design
-  //https://codepen.io/nxworld/pen/OyRrGy
+
+ //intropage
+ AOS.init(); 
