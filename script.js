@@ -63,4 +63,4 @@ mobileNav.addEventListener("click", () => toggleNav());
         document.getElementById('age').textContent = calculateAge('2009-05-30');
 
  //intropage
- AOS.init(); 
+ AOS.init();       
