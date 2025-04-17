@@ -490,6 +490,62 @@ font-weight: 350;
 list-style: none;
 }
 
+.table-text {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  text-align: left;
+  min-width: 300px;
+}
+
+.blocklet,
+.smblock {
+  padding: 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.blocklet {
+  font-weight: 700;
+}
+
+.smblock {
+  font-weight: 400;
+}
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  .blocklet,
+  .smblock {
+    font-size: 16px;
+  }
+
+  table {
+    border-spacing: 0 25px;
+  }
+}
+
+/* Desktops (≥992px) */
+@media (min-width: 992px) {
+  table {
+    max-width: 700px;
+    margin: 0 auto;
+    border-spacing: 0 35px;
+  }
+
+  .blocklet,
+  .smblock {
+    font-size: 18px;
+  }
+}
+
+
 /* Responsive Code */
 
 @media (max-width:425px) {
