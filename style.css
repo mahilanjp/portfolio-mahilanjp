@@ -417,7 +417,7 @@ section {
 }
 
 .right h1 span {
-  color: #FF5E32;
+  color:#2F855A;
 }
 
 .right p {
@@ -575,7 +575,7 @@ table {
   margin: 8rem auto;
   gap: 30px;
   z-index: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: #E6FFFA;
 }
 
 .skillFadedText {
@@ -584,7 +584,7 @@ table {
   bottom: -10%;
   user-select: none;
   /* color: #c2c2c225; */
-  background: linear-gradient(#c2c2c20d 0%, #c2c2c299 20%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(#c2c2c232 0%, #c2c2c2 20%, rgba(0, 0, 0, 0.852) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -599,7 +599,7 @@ table {
 
 .skillHeading {
   /* color: #8a06be; */
-  background: #FF5E32;
+  background: #2F855A;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -620,7 +620,7 @@ table {
 
 .skillSubHeading p {
   margin: 15px 0;
-  color:white;
+  color:black;
   text-align: justify;
 }
 
