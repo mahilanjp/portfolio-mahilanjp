@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="img/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <title>Homepage | MahilanJP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Preloader/loaderstyle.css">
 </head>
 <body>
+  <div id="preloader">
+  <img src="img/pre2.gif" alt="Loading...">
+</div>
+    <!--<div id="preloader">
+    <div class="pop">LOADING</div>
+</div>
+<script>
+  paceOptions = {
+  ajax: true,
+  document: true,
+  eventLag: false
+  };
+
+  Pace.on('done', function() {
+  $('.p').delay(5000).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+  $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+  TweenMax.from(".title", 2, {
+       delay: 1.8,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+ });
+
+</script>-->
     <nav>
         <div class="logo">
           <!--<img src="assets/Logo64x64.png" alt="logo" />-->
@@ -119,14 +150,49 @@
                   <img src="img/instagram.png" alt="https://www.instagram.com/m__ahilanjp">
                 </a>
                 <a href="https://www.github.com">
-                  <img src="img/github.png" alt="https://www.github.com">
+                  <img src="img/github.png" alt="https://www.github.com/mahilanjp">
                 </a>
                 <a href="https://www.telegram.com">
                   <img src="img/telegram.png" alt="https://www.telegram.com">
                 </a>    
               </div>
             </div>
-        </div> 
+        </div>
+    </div>
+  </div>
+   <h2 class="spotify-text">MELODIES I'VE CRAFTED</h2>
+  <div class="track-row">
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1TQXIltqoZ5XXyfCbAeSQQ?utm_source=generator" 
+       width="100%" height="252" frameBorder="0"
+       allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    </div>
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Ofmpyhv5UAQ70mENzB277?utm_source=generator" 
+      width="100%" height="352" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0FIDCNYYjNvPVimz5icugS?utm_source=generator" 
+      width="100%" height="352" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7pT6WSg4PCt4mr5ZFyUfsF?utm_source=generator" 
+      width="100%" height="352" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator"
+       width="100%" height="352" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4hTcGYU6uXZVCAfIMsxhlC?utm_source=generator&theme=0" 
+      width="100%" height="352" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 
@@ -168,16 +234,17 @@
 
   <div class="project_page" id="projects">
     <br>
-    <h2>PROJECTS</h2>
+    <h2>WEBSITES THAT I'VE DEVELOPED</h2>
+    <br>
     <br>
     <div class="projects_contain">
       <div class="project_container">
         <div class="grid_item">
           <div class="card">
-            <a href="Projects/project1.html"><img src="img/project1.jpg" alt="Project 1"></a>
+            <a href="Projects/project1.html"><img src="img/project1.png" alt="Project 1"></a>
             <a href="Projects/project1.html">
               <div class="card_content">
-                <h3>VOICE CALCULATOR</h3>
+                <h3>Weather App</h3>
               </div>
             </a>
           </div>
@@ -187,7 +254,7 @@
            <a href="Projects/project2.html"><img src="img/project2.jpg" alt="Project 2"></a> 
             <a href="Projects/project2.html">
               <div class="card_content">
-                <h3>Music APP</h3>
+                <h3>Music App</h3>
               </div>
             </a>
           </div>
@@ -197,7 +264,7 @@
            <a href="Projects/project3.html"><img src="img/project3.jpg" alt="Project 3"></a> 
             <a href="Projects/project3.html">
               <div class="card_content">
-                <h3>Responsive UI Website</h3>
+                <h3>Voice Calculator</h3>
               </div>
             </a>
           </div>
@@ -256,9 +323,65 @@
       </div>
     </div>
   </div>
-  
+  <br>
+<div class="contact-form" id="contact">
+    <h1>CONTACT ME</h1>
+    <div class="contact-container">
+        <div class="contact-main">
+            <div class="contact-content">
+                <form id="contact-form" action="#" method="post">
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name*" required>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email*" required>
+                    <input type="number" id="phone" placeholder="Enter Your Phone Number(Optional)">
+                    <textarea id="message" name="message" placeholder="What do you want to tell me?*" required></textarea>
+                    <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <br>
+                <div class="contact-icon">
+                    <a href="https://www.instagram.com/m__ahilanjp">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.github.com/mahilanjp">
+                        <img src="img/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://telegram.com">
+                        <img src="img/telegram.png" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+            <div class="form-map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+  <div id="footer" class="text-center">
+    <div class="footer-container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.instagram.com/m__ahilanjp"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://telegram.com/"><i class="bi bi-telegram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/mahilanjp"><i class="bi bi-github"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights MahilanJP. All rights reserved.</p>
+
+      <div class="credits">
+        <a href="https://github.com/mahilanjp">
+        Made by Mahilan J</a>
+      </div>
+    </div>
+  </div>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="img/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="Preloader/pace.js"></script>
+    
 </body>
 </html>
