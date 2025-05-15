@@ -20,7 +20,7 @@ mobileNav.addEventListener("click", () => toggleNav());
         } else {
           clearInterval(interval);
         }
-      }, 100);
+      }, 130);
     }
 
     const element = document.getElementById("mainpage-holder");
@@ -46,21 +46,7 @@ mobileNav.addEventListener("click", () => toggleNav());
       });
     });
   });
-   // Calculate Age Dynamically
-      //  function calculateAge(dob) {
-        //    const birthDate = new Date(dob);
-          //  const today = new Date();
-            //let age = today.getFullYear() - birthDate.getFullYear();
-            //const monthDifference = today.getMonth() - birthDate.getMonth();
-
-       //     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-         //       age--;
-           // }
-
-           // return age;
-       // }
-
-       // document.getElementById('age').textContent = calculateAge('2009-05-30');
+//Calculate Age Dynamically
        const dob = new Date("2009-05-30");
        const ageDisplay = document.getElementById("age");
      
@@ -74,4 +60,38 @@ mobileNav.addEventListener("click", () => toggleNav());
      
        ageDisplay.textContent = `${age} years`;
  //intropage
- AOS.init();       
+ AOS.init();  
+ 
+ // EmailJS Validator
+// Initialize EmailJS
+(function() {
+    emailjs.init("T5chQZALxrNORtvJe"); 
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    emailjs.send("service_w1ut6lj", "template_52r9ulk", {
+        user_name: name,
+        user_email: email,
+        user_phone: phone,
+        message: message
+    })
+    .then(function(response) {
+        alert('Message sent successfully!');
+        document.getElementById('contact-form').reset(); // Reset form after submission
+    }, function(error) {
+        alert('Failed to send message. Please try again.');
+        console.error('EmailJS Error:', error);
+    });
+});
