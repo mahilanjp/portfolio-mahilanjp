@@ -20,7 +20,7 @@ mobileNav.addEventListener("click", () => toggleNav());
         } else {
           clearInterval(interval);
         }
-      }, 130);
+      }, 235);
     }
 
     const element = document.getElementById("mainpage-holder");
